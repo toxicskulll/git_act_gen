@@ -2,8 +2,7 @@ import random
 import subprocess
 import os
 
-# Chance to run the .bat file: 40% chance
-if random.random() < 0.4:
+if random.random() < 0.4: #currently has 40% chance to make a commit on start
     print("🎯 Running bat file...")
     subprocess.run(["run_commits.bat"], shell=True)
 else:
