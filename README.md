@@ -56,5 +56,49 @@ Automates **random commits** to a **private GitHub repo** using Python + Windows
 ```bash
 git clone https://github.com/your-username/your-private-repo.git
 cd your-private-repo
+```
 
 Update variables in auto_committer.py:
+```
+FILE = "hello.txt"
+BRANCH = "main"
+```
+
+Test run manually:
+```
+python auto_committer.py
+python auto_trigger.py
+```
+
+### 3. 🗓 Schedule with Windows Task Scheduler
+
+1. Open **Task Scheduler** → click on **"Create Basic Task"**
+2. Set the **Trigger**: Daily or multiple times per day
+3. Set the **Action**: **Start a Program**
+4. **Program/script**: `python`
+5. **Add arguments**: `C:\path\to\your\repo\auto_trigger.py`
+6. **Start in**: `C:\path\to\your\repo`
+
+✅ You're all set! The script will now randomly run and push commits automatically.
+
+---
+
+### ⚠️ Notes & Tips
+
+- This is meant for **private use** and **educational purposes**
+- Avoid using this to **falsely manipulate public contribution stats**
+- Ensure Git credentials are securely configured
+- You can modify the **chance logic** in `auto_trigger.py` to increase or decrease frequency
+
+---
+
+### 📌 Author
+
+Made by **Aadishesh Padasalgi**  
+🔗 [LinkedIn](https://www.linkedin.com/in/aadishesh-padasalgi/) | 📧 aadishesh05@gmail.com
+
+---
+
+### 📝 License
+
+Licensed under the **MIT License**
