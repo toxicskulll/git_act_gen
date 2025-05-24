@@ -31,6 +31,14 @@ Automates **random commits** to a **private GitHub repo** using Python + Windows
 
 ## 🧰 File Breakdown
 
+📁 virtual-commit-generator/
+├── 📄 auto_committer.py        # Script that generates and pushes random commits
+├── 📄 auto_trigger.py          # Randomly decides whether to trigger the batch file
+├── 📄 run_commits.bat          # Batch file that runs the auto_committer script
+├── 📄 hello.txt                # Target file that gets updated to create commit changes
+├── 📄 README.md                # Project documentation with badges and setup instructions
+└── 📄 .git/                    # (Hidden) Git repository folder
+
 | File               | Purpose                                      |
 |--------------------|----------------------------------------------|
 | `auto_committer.py` | Makes random commits and pushes to GitHub    |
