@@ -9,17 +9,6 @@ Automates **random commits** to a **private GitHub repo** using Python + Windows
 
 ---
 
-## 📸 Demo Screenshot
-
-> 📅 Auto-trigger runs randomly through Windows Task Scheduler  
-> 💻 Commits are pushed with messages like:
-> `Updated hello.txt (2/5)` or `Routine update (4/7)`
-
-![Task Scheduler Setup Screenshot](https://via.placeholder.com/800x400?text=Task+Scheduler+Setup)  
-*You can replace this with your own screenshot for clarity.*
-
----
-
 ## 🔧 Features
 
 - 📝 Randomized edits to a dummy file
