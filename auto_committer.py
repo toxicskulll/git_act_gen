@@ -3,13 +3,13 @@ import random
 import time
 import os
 
-FILE = "hello.txt"
-BRANCH = "main"
+FILE = "hello.txt" #set file name
+BRANCH = "main" #change only if not using main by default
 
-commit_messages = [
+commit_messages = [ 
     "Updated hello.txt", "Small tweak", "Minor changes", "Added content",
     "Routine update", "Another update", "More data", "Fixing file"
-]
+] #change commit message as required
 
 num_commits = random.randint(0, 8)
 print(f"Making {num_commits} commits...")
